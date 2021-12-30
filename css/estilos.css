@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@600&display=swap');
+
+* {
+    font-family: 'Catamaran', sans-serif;
+  
+   
+}
+
+/* mobile first */
+
+/* --Navbar-- */
+.body__nav {
+    margin-bottom: 20px;
+}
+
+/* --Main-- */
+
+.div__img {
+    padding-bottom: 20px;
+    max-width: 400px;
+    max-height: 400px;
+    min-width: 250px;
+}
+
+.jumbotron--color {
+    color: seashell;
+    margin: 20px auto;
+}
+
+
+.div2__a {
+    text-decoration: none;
+    /* color: rgb(168, 143, 29);
+    border: 2px solid rgb(107, 66, 19);
+    background-color: rgba(240, 230, 140, 0.493); */
+     /* width: 213px; */
+    text-align: justify;
+    font-size: 16px;
+    display: flex;
+    min-width: 130px;
+    justify-content: center;
+    
+  
+    /*
+    align-items: center;
+    justify-content: center;   */
+    color: white;
+}
+
+.btn-group--size {
+    width: 90px; 
+    display: flex;
+    
+}
+
+.btn--margin {
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    padding: 0;
+    height: 55px;
+}
+
+.div__a {
+    text-decoration: none;
+    
+    font-size: 20px;
+    font-weight: 600;
+    
+    line-height: 40px;
+    
+    
+}
+
+.div__a--color1 {
+    color: green;
+}
+
+.div__a--color1:hover {
+    text-decoration: none;
+    color: black;
+    font-family: 'Mansalva', cursive;  
+}
+
+.div__a--color2 {
+    color: red;
+}
+
+.div__a--color2:hover {
+    text-decoration: none;
+    color: white;   
+}
+
+.footer__p {
+    text-align: center;
+    margin: 20px;
+}
+
+.footer__form {
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.form__div {
+    text-align: center;
+    width: 250px;
+    height: 35px;
+}
+
+.div__input {
+    margin: 5px;
+}
+
+.form__input {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+
+.footer__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section__a {
+    padding: 0 10px 20px;
+}
+
+/* --blog-- */
+
+.article__p {
+    color: seashell;
+}
+
+.btn--estrella {
+    border-color: black;
+    background-color: white;
+}
+
+.div__a--color3 {
+    color: black;
+}
