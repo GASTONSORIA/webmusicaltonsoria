@@ -7,51 +7,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ton Soria</title>
     <!-- bootstrap -->
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- logo  -->
     <link rel="shortcut icon" href="../img/favicon-logo-t.png">
+    <!-- css  -->
     <link rel="stylesheet" href="../css/estilos.css">
-
 </head>
 
-<body class="body">
+<body>
+<!-- ------------------ H E A D E R ----------------------------------------------------  -->
+<header class="navbar navbar-expand-md  navbar-dark body__nav">
+    <!-- Logo -->
+    <a class="navbar-brand" href="../index.html">
+      <h1  class="header__h1">Ton Soria</h1>
+    </a>
 
-    <nav class="navbar navbar-expand-md bg-success navbar-dark body__nav">
-        <!-- Brand -->
-        <a class="navbar-brand" href="../index.html">
-            <h1>Ton Soria</h1>
-        </a>
+    <!-- Toggler/collapsibe Button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <!-- Toggler/collapsibe Button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-            <ul class="navbar-nav nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">¡Apoya al proyecto!</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="./secciones/noticias.html">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">EPK</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Mùsica + Videos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
-            </ul>
-        </div>
+    <!-- Navbar links -->
+    <nav class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav nav">
+        <li class="nav-item">
+          <a class="nav-link" href="../secciones/quiero-apoyar-al-proyecto.html">¡Apoya al proyecto!</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../secciones/noticias.html">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../secciones/epk.html">EPK</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../secciones/musica-videos.html">Mùsica + Videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../secciones/contacto.html">Contacto</a>
+        </li>
+      </ul>
     </nav>
-    <!-- --navbar fin-- -->
+  </header>
+
+  <!-- ------------------------------ HEADER fin ------------------------------------------------------------ -->
+
 
     <!-- ------------------------------Contenido Principal--------------------------------------------------- -->
     <main>
@@ -91,56 +90,61 @@
 
 
 
-        <!-- -----------------------------------------------footer---------------------------------------------------- -->
+       <!-- --------------footer------------------  -->
+
+  <footer class="container-fluid d-flex flex-column justify-content-center body__footer">
 
 
 
-        <footer class="container-fluid d-flex flex-column justify-content-center bg-warning">
+    <p class="footer__p">
+      <em>¿Te gustaría recibir promociones, contenido exclusivo y novedades?</em><br>
+      <strong>¡Sumate!</strong>
+    </p>
 
+    
+   
 
+   
 
-            <p class="footer__p">
-                <em>¿Te gustaría recibir promociones, contenido exclusivo y novedades?</em><br>
-                <strong>¡Sumate!</strong>
-            </p>
+  <form class="form-inline container d-flex flex-column justify-content-around align-items-center mb-4" action="/action_page.php">
+  <!-- nombre  -->
+  <label for="uname" class="mr-sm-2">Nombre:</label>
+  <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Tu nombre" id="uname">
+  <!-- email  -->
+  <label for="email" class="mr-sm-2">Email:</label>
+  <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Tu email" id="email">
+ 
+  <button type="submit" class="btn mb-2 form__button">UNIRME</button>
+</form>
 
-            <form class="container d-flex flex-column justify-content-around align-items-center  footer__form "
-                action="newsletter.php" method="post" enctype="application/x-www-form-urlencoded">
+  <!-- ------------------------------ HEADER fin ------------------------------------------------------------ -->
 
-                <div class="form__div  ">
-                    <label class="div__label" for="miembros-newsletter" class="form__label">Nombre:</label>
-                    <input class="div__input" type="text" name="miembros-newsletter" placeholder="Tu nombre"
-                        required><br>
-                </div>
+    <!-- ----------------------------------LOGOS RRSS ------------------------------------------------------------>
 
-                <div class="form__div">
-                    <label class="div__label" for="email-newsletter">E-mail:</label>
-                    <input class="div__input" type="email" name="email-newsletter" placeholder="tuemail@correo.com"
-                        required><br>
-                </div>
+    <section class="container-fluid d-flex justify-content-center footer__section">
 
-                <input type="submit" value="Unirme" class="form__input">
-            </form>
-
-            <!-- ----------------------------------LOGOS RRSS ------------------------------------------------------------>
-
-            <section class="container-fluid d-flex justify-content-center footer__section">
-
-                <a href="https://www.instagram.com/ton.soria/" target="_blank">
-                    <img class="section__a" src="../img/instagram.png" alt="cuenta instagram ton soria"></a>
-
-                <a href="https://www.youtube.com/c/TonSoria" target="_blank">
-                    <img class="section__a" src="../img/youtube.png" alt="Ton Soria Canal de Youtube"></a>
-
-                <a href="https://open.spotify.com/artist/7gbk7zeEljXP9GAHxwNHar">
-                    <img class="section__a" src="../img/spotify.png" alt=""></a>
-
-                <a href="https://www.facebook.com/SoriaTon" target="_blank">
-                    <img class="section__a" src="../img/facebook.png" alt=""></a>
-
-            </section>
-        </footer>
-        <!-- ------------------fin footer-----------------  -->
-</body>
-
-</html>
+        <a href="https://www.instagram.com/ton.soria/" target="_blank">
+          <img class="section__a" src="../img/instagram.png" alt="cuenta instagram ton soria"></a>
+  
+        <a href="https://www.youtube.com/c/TonSoria" target="_blank">
+          <img class="section__a" src="../img/youtube.png" alt="Ton Soria Canal de Youtube"></a>
+  
+        <a href="https://open.spotify.com/artist/7gbk7zeEljXP9GAHxwNHar">
+          <img class="section__a" src="../img/spotify.png" alt=""></a>
+  
+        <a href="https://www.facebook.com/SoriaTon" target="_blank">
+          <img class="section__a" src="../img/facebook.png" alt=""></a>
+  
+      </section>
+    </footer>
+    <!-- -------------------------------fin footer------------------------------------------------  -->
+  
+    <!------------------------------sripts bootstrap------------------------------------------------->
+  
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  
+  </body>
+  
+  </html>
