@@ -210,6 +210,10 @@ footer.jumbotron-fluid.container {
     background-color: #bbc9a2;
 }
 
+.card.container.col-lg-4 {
+    background-color: #bbc9a2;
+}
+
 img.card-body {
     padding: 0;
 }
@@ -245,6 +249,13 @@ article.card-group.row {
     
     color: white;
     font-family: 'Raleway', sans-serif;
+}
+
+/* quiero apoyar el proyecto  */
+
+.card-body.row {
+    border: none;
+    
 }
 
 

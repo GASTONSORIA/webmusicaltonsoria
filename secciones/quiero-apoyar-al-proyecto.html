@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,25 +11,29 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
     <!-- logo  -->
     <link rel="shortcut icon" href="../img/favicon-logo-t.png">
+    <!-- aos  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- css  -->
     <link rel="stylesheet" href="../css/estilos.css">
 
 </head>
 
 <body>
-    <!-- ------------------ H E A D E R ----------------------------------------------------  -->
+    <!-- ---------------------------- H E A D E R ------------------------------------------------  -->
     <header class="navbar navbar-expand-md  navbar-dark body__nav">
-        <!-- Logo -->
+
+        <!-------------------------- Logo -->
         <a class="navbar-brand" href="../index.html">
             <h1 class="header__h1">Ton Soria</h1>
         </a>
 
-        <!-- Toggler/collapsibe Button -->
+        <!-- ---------Toggler/collapsibe Button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- Navbar links -->
+        <!------------- Navbar links -->
         <nav class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav nav">
                 <li class="nav-item">
@@ -55,140 +60,129 @@
 
     <!-- ------------------------------Contenido Principal--------------------------------------------------- -->
     <main class="mt-lg-4">
-            
 
-                <div class="card container col-lg-4">
-                    <div class="card-body row d-flex justify-content-left">
-                        <h3 class="card-title mb-1 col-12 text-white">Mercado Pago</h3>
-                        <p class="card-text col-12 text-white">Solo Argentina</p>
-                        <div class="col-12 d-flex p-4">
-                        <h4 class="card-text col-7  font-weight-bolder div__h4"> AR$ 999 </h4>
-                        <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-                            data-preference-id="548712216-431c0a28-6aa2-49bb-af7d-61fe381140f8" data-source="button">
-                        </script> 
-                        </div>
-                        <div class="col-12 d-flex ">
-                        <h4 class="card-text col-7 font-weight-bolder div__h4"> AR$ 1999</h4>
-                        <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-                            data-preference-id="548712216-840eb027-18d0-4ef0-86d4-030fc05c07b4" data-source="button"
-                            id="mercadopago">
-                        </script>
-                        </div>
-                    </div>
-                </div>
+        <div class="card container col-lg-4 p-4 d-flex justify-content-center ">
+            <h3 class="card-title mb-1 col-12 text-white">Mercado Pago</h3>
+            <p class="card-text col-12 text-white">Solo Argentina</p>
+            <div class="col-12 d-flex p-4">
+                <h4 class="card-text col-7  font-weight-bolder div__h4 " data-aos="fade-right"> AR$ 999 </h4>
 
+                <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                    data-preference-id="548712216-431c0a28-6aa2-49bb-af7d-61fe381140f8" data-source="button">
+                </script>
+            </div>
+            <div class="col-12 d-flex ">
+                <h4 class="card-text col-7 font-weight-bolder div__h4" data-aos="fade-right"> AR$ 1999</h4>
+                <script data-aos="fade-left"
+                    src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                    data-preference-id="548712216-840eb027-18d0-4ef0-86d4-030fc05c07b4" data-source="button"
+                    id="mercadopago">
+                </script>
+            </div>
+        </div>
 
-
-
-
-
-
-                <div class="card container col-lg-4">
-                    <div class="card-body row">
-                        <h3 class="card-title col-12 text-white">Paypal</h3>
-                        <p class="card-text col-12 text-white">Todos los paises</p>
-                        <h4 class="col-7  font-weight-bolder div__h4">Vos elegis el monto</h4>
-                        <button id="button" class="col-5" type="button" class="btn btn-primary btn-lg"><a class="button__a"  href="https://paypal.me/tonsoria?country.x=AR&locale.x=es_XC">Enviar</a></button>
-                    </div>
-                </div>
+        <div class="card container col-lg-4">
+            <div class="card-body row">
+                <h3 class="card-title col-12 text-white">Paypal</h3>
+                <p class="card-text col-12 text-white">Todos los paises</p>
+                <h4 class="col-7  font-weight-bolder div__h4" data-aos="fade-right">Vos elegis el monto</h4>
+                <button data-aos="fade-left" id="button" class="col-5" type="button" class="btn btn-primary btn-lg"><a
+                        class="button__a"
+                        href="https://paypal.me/tonsoria?country.x=AR&locale.x=es_XC">Enviar</a></button>
+            </div>
+        </div>
 
 
+        <footer class="jumbotron-fluid container">
+            <article class="row mx-4 mt-4">
 
+                <h2 class="article__h2 col-12 mt-4 wow bounceInUp">Beneficios para vos por apoyar al proyecto</h2>
 
-
-
-
-
-            </header>
-
-            <footer class="jumbotron-fluid container">
-                <article class="row mx-4 mt-4">
-                    
-                    <h2 class="article__h2 col-12 mt-4">Beneficios para vos por apoyar al proyecto</h2>
-
-                    <p class="col 12 text-justify"> Todo proyecto independiente, en realidad, depende en gran parte de cada uno
-                        de
-                        ustedes. Sobre todo al principio, cuando son pocas personas y gracias a la globalizacion, estan
-                        esparcidas por distintos paises, provincias y barrios. Sin conocernos cara a cara, ya estuvimos
-                        compartiendo música, charlas, y el día a día a traves de las redes. <br> Si llegaste hasta acá
-                        es
-                        porque
-                        tenemos un lazo especial, porque de alguna manera conectamos y tenemos varias cosas en comun. No
-                        todos
-                        llegan a esta instancia de querer ser parte del proyecto y ser parte de esta nueva etapa, mi
-                        primer
-                        disco. Las cosas llevan su tiempo, pero con dinero se vuelven realidad mas rapido y con mas
-                        calidad.
-                        <br>
-                        Como agradecimiento de tu aporte quiero darte un regalo muy especial y que lo elijas vos. <br>
-                        Donando ARS $999 o u$S100 recibis un vale para pedir un cover a eleccion con una duracion de 15
-                        segundos
-                        (puede ser para dedicar a una persona o para vos!) <br>
-                        Donando ARS $1999 o U$S200 recibis un vale para un cover a eleccion con una duracion de 60 seg
-                        (¡Puede
-                        ser para dedicar a una persona o para vos!)
-                    </p>
-                </article>
-            </footer>
-
+                <p data-aos="zoom-in" class="col 12 text-justify"> Todo proyecto independiente, en realidad, depende en
+                    gran parte de cada uno
+                    de
+                    ustedes. Sobre todo al principio, cuando son pocas personas y gracias a la globalizacion, estan
+                    esparcidas por distintos paises, provincias y barrios. Sin conocernos cara a cara, ya estuvimos
+                    compartiendo música, charlas, y el día a día a traves de las redes. <br> Si llegaste hasta acá
+                    es
+                    porque
+                    tenemos un lazo especial, porque de alguna manera conectamos y tenemos varias cosas en comun. No
+                    todos
+                    llegan a esta instancia de querer ser parte del proyecto y ser parte de esta nueva etapa, mi
+                    primer
+                    disco. Las cosas llevan su tiempo, pero con dinero se vuelven realidad mas rapido y con mas
+                    calidad.
+                    <br>
+                    Como agradecimiento de tu aporte quiero darte un regalo muy especial y que lo elijas vos. <br>
+                    Donando ARS $999 o u$S100 recibis un vale para pedir un cover a eleccion con una duracion de 15
+                    segundos
+                    (puede ser para dedicar a una persona o para vos!) <br>
+                    Donando ARS $1999 o U$S200 recibis un vale para un cover a eleccion con una duracion de 60 seg
+                    (¡Puede
+                    ser para dedicar a una persona o para vos!)
+                </p>
+            </article>
+        </footer>
 
     </main>
 
-   <!-- --------------footer------------------  -->
+    <!-- --------------footer------------------  -->
 
-  <footer class="container-fluid d-flex flex-column justify-content-center body__footer">
+    <footer data-aos="fade-up" class="container-fluid d-flex flex-column justify-content-center body__footer">
+
+        <p class="footer__p">
+            <em>¿Te gustaría recibir promociones, contenido exclusivo y novedades?</em><br>
+            <strong>¡Sumate!</strong>
+        </p>
+        
+        <form class="form-inline container d-flex flex-column justify-content-around align-items-center mb-4"
+            action="/action_page.php">
+            
+            <!-- nombre  -->
+            <label for="uname" class="mr-sm-2">Nombre:</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Tu nombre" id="uname">
+            
+            <!-- email  -->
+            <label for="email" class="mr-sm-2">Email:</label>
+            <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Tu email" id="email">
+
+            <button type="submit" class="btn mb-2 form__button">UNIRME</button>
+
+            
+
+        </form>
 
 
 
-    <p class="footer__p">
-      <em>¿Te gustaría recibir promociones, contenido exclusivo y novedades?</em><br>
-      <strong>¡Sumate!</strong>
-    </p>
+        <!-- ----------------------------------LOGOS RRSS ------------------------------------------------------------>
 
-    
-   
+        <section class="container-fluid d-flex justify-content-center footer__section">
 
-   
+            <a href="https://www.instagram.com/ton.soria/" target="_blank">
+                <img class="section__a" src="../img/instagram.png" alt="cuenta instagram ton soria"></a>
 
-  <form class="form-inline container d-flex flex-column justify-content-around align-items-center mb-4" action="/action_page.php">
-  <!-- nombre  -->
-  <label for="uname" class="mr-sm-2">Nombre:</label>
-  <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Tu nombre" id="uname">
-  <!-- email  -->
-  <label for="email" class="mr-sm-2">Email:</label>
-  <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Tu email" id="email">
- 
-  <button type="submit" class="btn mb-2 form__button">UNIRME</button>
-</form>
+            <a href="https://www.youtube.com/c/TonSoria" target="_blank">
+                <img class="section__a" src="../img/youtube.png" alt="Ton Soria Canal de Youtube"></a>
 
-  <!-- ------------------------------ HEADER fin ------------------------------------------------------------ -->
+            <a href="https://open.spotify.com/artist/7gbk7zeEljXP9GAHxwNHar">
+                <img class="section__a" src="../img/spotify.png" alt=""></a>
 
-    <!-- ----------------------------------LOGOS RRSS ------------------------------------------------------------>
+            <a href="https://www.facebook.com/SoriaTon" target="_blank">
+                <img class="section__a" src="../img/facebook.png" alt=""></a>
 
-    <section class="container-fluid d-flex justify-content-center footer__section">
+        </section>
+    </footer>
+    <!-- -------------------------------fin footer------------------------------------------------  -->
 
-      <a href="https://www.instagram.com/ton.soria/" target="_blank">
-        <img class="section__a" src="../img/instagram.png" alt="cuenta instagram ton soria"></a>
+    <!------------------------------sripts bootstrap------------------------------------------------->
 
-      <a href="https://www.youtube.com/c/TonSoria" target="_blank">
-        <img class="section__a" src="../img/youtube.png" alt="Ton Soria Canal de Youtube"></a>
-
-      <a href="https://open.spotify.com/artist/7gbk7zeEljXP9GAHxwNHar">
-        <img class="section__a" src="../img/spotify.png" alt=""></a>
-
-      <a href="https://www.facebook.com/SoriaTon" target="_blank">
-        <img class="section__a" src="../img/facebook.png" alt=""></a>
-
-    </section>
-  </footer>
-  <!-- -------------------------------fin footer------------------------------------------------  -->
-
-  <!------------------------------sripts bootstrap------------------------------------------------->
-
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- -------------------------------------AOS---------------------------------------------------- -->
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
