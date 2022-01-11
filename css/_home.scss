@@ -1,0 +1,58 @@
+/* -----------------HOME--------------- */
+
+// PORTADA---------------------------------------------------------------------------
+.div__img {
+    padding-bottom: 20px;
+    max-width: 400px;
+    max-height: 400px;
+    min-width: 250px;
+}
+
+// 
+// CARD LANZAMIENTO-------------------------------------------------------------------
+.card-body.main__card--bg.row{
+    background-color: $color2;
+}
+
+// BOTONES YOUTUBE SPOTIFY ------------------------------------------------------------
+
+.btn-group--size {
+    width: 90px; 
+    display: flex;
+    
+}
+
+.btn--margin {
+    margin: 10px;
+    width: 100px;
+    text-align: center;
+    padding: 0;
+    height: 55px;
+}
+
+.div__a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 40px;   
+}
+
+.div__a--color1 {
+    color: green;
+}
+
+.div__a--color1:hover {
+    text-decoration: none;
+    color: black;
+    font-family: 'Mansalva', cursive;  
+}
+
+.div__a--color2 {
+    color: red;
+}
+
+.div__a--color2:hover {
+    text-decoration: none;
+    color: white;   
+}
+

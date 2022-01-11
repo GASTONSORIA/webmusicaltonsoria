@@ -1,0 +1,50 @@
+/*-- epk --*/ 
+
+.body__main {
+    width: 100vw;
+}
+
+.card-body.row {
+    background-color: $color3;
+}
+
+.card.container.col-lg-4 {
+    background-color: $color3;
+}
+
+img.card-body {
+    padding: 0;
+}
+
+footer.jumbotron.jumbotron-fluid {
+    background-color: $color2;
+    margin-bottom: 0;
+}
+.article__img {
+    max-width: 320px ;
+}
+
+.card-body.text-center.row {
+    margin: 0;
+}
+
+.card.bg-white.col-6 {
+    margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.card-body.text-center.row {
+    padding: 0;
+}
+
+article.card-group.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.div__h4 {
+    
+    color: $color2;
+    font-family: 'Raleway', sans-serif;
+}

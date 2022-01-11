@@ -1,0 +1,50 @@
+//--------------------------------- FOOTER -------------------------
+
+.body__footer {
+    background-image: linear-gradient(to top , $color1 , $color2);
+
+}
+
+.footer__p {
+    text-align: center;
+    margin: 20px;
+}
+
+.footer__form {
+    height: 150px;
+    margin-bottom: 30px;
+}
+
+.form__div {
+    text-align: center;
+    width: 250px;
+    height: 35px;
+}
+
+.div__input {
+    margin: 5px;
+}
+
+.form__input {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+}
+
+.form__button {
+    background-color: #f5f5dc;
+}
+
+
+.footer__section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.section__a {
+    padding: 0 10px 20px;
+}
