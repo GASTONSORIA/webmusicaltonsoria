@@ -1,5 +1,16 @@
 /* -----------------HOME--------------- */
 
+// VAR$
+$color1: #6b7d4a;
+
+$color2: #f5f5dc;
+
+$color3:#bbc9a2;
+
+$color4:seashell;
+
+$color5: blue;
+
 // PORTADA---------------------------------------------------------------------------
 .div__img {
     padding-bottom: 20px;
@@ -56,3 +67,16 @@
     color: white;   
 }
 
+//BOTONES SPOTIFY YOUTUBE ESCUCHAR
+
+$plataformasdigitales: (
+    youtube: red
+    spotify: green
+    escuchar: $color1
+);
+
+@each $plataformadigital, $color in $plataformasdigitales{
+    .btn--#(plataformadigital) {
+        background-color: $color;
+    }   
+}

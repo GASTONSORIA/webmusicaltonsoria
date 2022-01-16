@@ -12,6 +12,28 @@ body {
   background-color: #f5f5dc;
 }
 
+.box_uno {
+  color: blue;
+  width: 360px;
+}
+
+.box_dos {
+  color: green;
+  width: 310px;
+}
+
+blue {
+  color: blue;
+}
+
+yellow {
+  color: yellow;
+}
+
+black {
+  color: black;
+}
+
 /* --Navbar-- */
 .body__nav {
   margin-bottom: 20px;
