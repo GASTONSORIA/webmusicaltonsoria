@@ -1,18 +1,21 @@
-/* --blog-- */
+/* --blog-- ------------------------------------------------*/
 
-
-.article__p {
-    color: seashell;
+@mixin articulo($background-color, $padding-top){
+    background-color: $background-color;
+    padding-top: $padding-top;
 }
 
-footer.jumbotron-fluid.container {
-    background-color: #f5f5dc;
+.main__article--bgcolor {
+    @include articulo($color2, 1rem)
 }
 
 
+
+// BOTON
 .btn--estrella {
     border-color: black;
     background-color: white;
+    
 }
 
 .div__a--color3 {

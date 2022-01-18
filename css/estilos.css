@@ -12,28 +12,6 @@ body {
   background-color: #f5f5dc;
 }
 
-.box_uno {
-  color: blue;
-  width: 360px;
-}
-
-.box_dos {
-  color: green;
-  width: 310px;
-}
-
-blue {
-  color: blue;
-}
-
-yellow {
-  color: yellow;
-}
-
-black {
-  color: black;
-}
-
 /* --Navbar-- */
 .body__nav {
   margin-bottom: 20px;
@@ -133,30 +111,57 @@ black {
   height: 55px;
 }
 
-.div__a {
-  text-decoration: none;
-  font-size: 20px;
+.btn--youtube {
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f5f5dc;
+  text-transform: uppercase;
   font-weight: 600;
-  line-height: 40px;
 }
 
-.div__a--color1 {
-  color: green;
+.btn--spotify, .btn--color {
+  background-color: green;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f5f5dc;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-.div__a--color1:hover {
-  text-decoration: none;
+.btn--escuchar {
+  background-color: #6b7d4a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #f5f5dc;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.btn--color {
   color: black;
-  font-family: 'Mansalva', cursive;
-}
-
-.div__a--color2 {
-  color: red;
-}
-
-.div__a--color2:hover {
-  text-decoration: none;
-  color: white;
+  background-color: olivedrab;
 }
 
 /*-- epk --*/
@@ -209,13 +214,10 @@ article.card-group.row {
   font-family: 'Raleway', sans-serif;
 }
 
-/* --blog-- */
-.article__p {
-  color: seashell;
-}
-
-footer.jumbotron-fluid.container {
+/* --blog-- ------------------------------------------------*/
+.main__article--bgcolor {
   background-color: #f5f5dc;
+  padding-top: 1rem;
 }
 
 .btn--estrella {

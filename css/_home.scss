@@ -41,42 +41,82 @@ $color5: blue;
     height: 55px;
 }
 
-.div__a {
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 40px;   
-}
+// .div__a {
+//     text-decoration: none;
+//     font-size: 20px;
+//     font-weight: 600;
+//     line-height: 40px;   
+// }
 
-.div__a--color1 {
-    color: green;
-}
+// .div__a--color1 {
+//     color: green;
+// }
 
-.div__a--color1:hover {
-    text-decoration: none;
-    color: black;
-    font-family: 'Mansalva', cursive;  
-}
+// .div__a--color1:hover {
+//     text-decoration: none;
+//     color: black;
+//     font-family: 'Mansalva', cursive;  
+// }
 
-.div__a--color2 {
-    color: red;
-}
+// .div__a--color2 {
+//     color: red;
+// }
 
-.div__a--color2:hover {
-    text-decoration: none;
-    color: white;   
-}
+// .div__a--color2:hover {
+//     text-decoration: none;
+//     color: white;   
+// }
 
-//BOTONES SPOTIFY YOUTUBE ESCUCHAR
+// MAP Y EXTEND en BOTONES DE _home.scss y MIXIN en boton _noticias.scss
+
+// MAP BOTONES SPOTIFY YOUTUBE ESCUCHAR---------------------
 
 $plataformasdigitales: (
-    youtube: red
-    spotify: green
+    youtube: red,
+    spotify: green,
     escuchar: $color1
+    
 );
 
 @each $plataformadigital, $color in $plataformasdigitales{
-    .btn--#(plataformadigital) {
+    .btn--#{$plataformadigital} {
         background-color: $color;
-    }   
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color2;
+        text-transform: uppercase;
+        font-weight: 600;
+    }        
 }
+
+// EXTEND 
+
+.btn--color {
+    @extend .btn--spotify; 
+    color: black;
+    background-color: olivedrab;
+}
+
+
+
+
+// reset img map-get--------------------------------
+// padding 
+
+// $estilo--h2 : (
+//     negrita: 600,
+//     fuente: 'Sofia', cursive,
+// );
+
+// h2 {
+//     font-weight: ($estilo--h2, negrita);
+//     font-family: ($estilo--h2, fuente);
+// }
+
+
+// MIXIN 
+
+
+
+

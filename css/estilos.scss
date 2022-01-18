@@ -28,30 +28,6 @@ body {
     background-color: $color2;
 }
 
-// ejercicio
-
-$ancho: 720px;
-$blue: blue;
-$green: green;
-
-.box_uno {
-    color:$blue;
-    width:$ancho/2   
-}
-
-.box_dos {
-    color:$green;
-    width:($ancho/2)-50;
-}
-
-@each $color in blue,yellow,black{
-    #{$color}{
-        color:#{$color};       
-    }
-}
-    
-    
-
 // -------------------PARTIALS-----------------------------------------------------------
 
 // MENÚ y FOOTER 
