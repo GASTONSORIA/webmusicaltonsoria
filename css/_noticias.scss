@@ -22,4 +22,13 @@
     color: black;
 }
 
+// map-get()---------------------------------------
+$estilos-p: (
+    tamaño: 19px,
+    color1: #333
+);
 
+.article__p--map-get {
+    font-size: map-get($estilos-p, tamaño);
+    color: map-get($estilos-p, color1);
+}
