@@ -2,29 +2,31 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Completa el formulario para contactar a Ton Soria para un show en vivo">
-    <meta name="keywords" content="booking, ton soria, programar show, contratar, contratacion, cuanto sale un show, cuanto sale contratar">
-    <title>Contacto</title>
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
-    <!-- logo  -->
-    <link rel="shortcut icon" href="../img/favicon-logo-t.png">
-    <!-- aos  -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- css  -->
-    <link rel="stylesheet" href="../css/estilos.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- seo -->
+  <meta name="description" content="Completa el formulario para contactar a Ton Soria para un show en vivo">
+  <meta name="keywords"
+    content="booking, ton soria, programar show, contratar, contratacion, cuanto sale un show, cuanto sale contratar">
+  <title>Contacto</title>
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <!-- logo  -->
+  <link rel="shortcut icon" href="../img/favicon-logo-t.png">
+  <!-- aos  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- css  -->
+  <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
- <!-- ------------------ H E A D E R ----------------------------------------------------  -->
- <header class="navbar navbar-expand-md navbar-dark body__nav">
+  <!-- ------------------ H E A D E R ----------------------------------------------------  -->
+  <header class="navbar navbar-expand-md navbar-dark body__nav">
     <!-- Logo -->
     <a class="navbar-brand" href="../index.html">
-      <h1  class="header__h1">Ton Soria</h1>
+      <h1 class="header__h1">Ton Soria</h1>
     </a>
 
     <!-- Toggler/collapsibe Button -->
@@ -55,80 +57,77 @@
   </header>
 
   <!-- ------------------------------ HEADER fin ------------------------------------------------------------ -->
-<!-- ------------------------------Contenido Principal--------------------------------------------------- -->
+  <!-- ------------------------------Contenido Principal--------------------------------------------------- -->
 
-    <main>
-        <h2 class="article__h2 article__h2--booking">Booking</h2>
-        <form class="main__form1 main__form1--booking" action="contacto.php" method="post"
-            enctype="application/x-www-form-urlencoded">
-            <div class="form__div1 form_div1--booking">
-                <div class="form__div2">
-                    <label for="nombre">Nombre:</label>
-                    <input class="div__input div__input--booking" type="text" required name="nombre"
-                        placeholder="Ingresa tu nombre"><br>
+  <main class="card">
+  
+    <!-- titulo -->
+    <div class="card-header">
+      <h2>Booking</h2>
+    </div>
+    <!-- FORMULARIO BOOKING -->
+    <div class="card-body">
+      <form class="form-inline" action="contacto.php" method="post" enctype="application/x-www-form-urlencoded">
 
-                    <label for="apellido">Apellido:</label>
-                    <input class="div__input div__input--booking" type="text" required name="apellido"
-                        placeholder="Ingresa tu apellido"><br>
 
-                    <label for="locacion">Locación:</label>
-                    <Input class="div__input div__input--booking" type="text" required
-                        placeholder="Luna Park/Argentina/CABA" name="locacion"><br>
+        <label for="nombre">Nombre:</label>
+        <input class="form-control" type="text" required name="nombre" placeholder="Ingresa tu nombre"><br>
 
-                    <label for="email">Email:</label>
-                    <input class="div__input div__input--booking" type="email" required placeholder="email@ejemplo.com"
-                        name="email"><br>
+        <label for="apellido">Apellido:</label>
+        <input class="form-control" type="text" required name="apellido" placeholder="Ingresa tu apellido"><br>
 
-                    <label for="whatsapp">Whatsapp</label>
-                    <input class="div__input div__input--booking" type="tel" required
-                        placeholder="+(Cod de area) Numero cel" name="whatsapp"><br>
-                </div>
+        <label for="locacion">Locación:</label>
+        <Input class="form-control" type="text" required placeholder="Luna Park/Argentina/CABA" name="locacion"><br>
 
-                <div class="form__div2">
-                    <label for="evento">Tipo de evento</label>
-                    <select class="div__input div__input--booking" name="evento" id="">
-                        <option value="concierto">Concierto</option>
-                        <option value="festival">Festival</option>
-                        <option value="show a benenficio">Show a beneficio</option>
-                        <option value="evento privado">Evento privado</option>
-                    </select><br>
+        <label for="email">Email:</label>
+        <input class="form-control" type="email" required placeholder="email@ejemplo.com" name="email"><br>
 
-                    <label for="evento">Nombre del evento:</label>
-                    <input class="div__input div__input--booking" type="text" required name="evento"
-                        placeholder="Ingresa el nombre del evento"><br>
+        <label for="whatsapp">Whatsapp</label>
+        <input class="form-control" type="tel" required placeholder="+(Cod de area) Numero cel" name="whatsapp"><br>
 
-                    <label for="asistencia">Asistencia esperada:</label>
-                    <input class="div__input div__input--booking" type="number" required name="asistencia"
-                        placeholder="2000-3000"><br>
 
-                    <label for="tickets">Venta de tickets</label>
-                    <select class="div__input div__input--booking" name="tickets" id="">
-                        <option value="si">Sí</option>
-                        <option value="no">No</option>
-                    </select><br>
 
-                    <label for="fecha">Fecha estimada:</label>
-                    <input class="div__input div__input--booking" type="date" required name="fecha"><br>
-                </div>
-            </div>
+        <label for="evento">Tipo de evento</label>
+        <select class="form-control" name="evento" id="">
+          <option value="concierto">Concierto</option>
+          <option value="festival">Festival</option>
+          <option value="show a benenficio">Show a beneficio</option>
+          <option value="evento privado">Evento privado</option>
+        </select><br>
 
-            <fieldset>
-                <legend>Información adicional (opcional)</legend>
-                <textarea class="fieldset__textarea" name="informacionadicional" id="" cols="60" rows="12"
-                    placeholder="Escriba la información adicional aquí"></textarea>
+        <label for="evento">Nombre del evento:</label>
+        <input class="form-control" type="text" required name="evento" placeholder="Ingresa el nombre del evento"><br>
 
-            </fieldset>
+        <label for="asistencia">Asistencia esperada:</label>
+        <input class="form-control" type="number" required name="asistencia" placeholder="2000-3000"><br>
 
-            <div class="form__div3">
-                <input class="div2__a div2__a--booking" type="submit" value="enviar"> <br>
-                <input class="div2__a div2__a--booking" type="reset" value="borrar"><br> 
-            </div>
-        </form>
-    </main>
+        <label for="tickets">Venta de tickets</label>
+        <select class="form-control" name="tickets" id="">
+          <option value="si">Sí</option>
+          <option value="no">No</option>
+        </select><br>
 
-<!-- --------------footer------------------  -->
+        <label for="fecha">Fecha estimada:</label>
+        <input class="form-control" type="date" required name="fecha"><br>
 
-<footer data-aos="fade-up" class="container-fluid d-flex flex-column justify-content-center body__footer">
+    </div>
+
+    <div class="card-footer">
+      <legend>Información adicional (opcional)</legend>
+      <textarea class="form-control" name="informacionadicional" id="" cols="60" rows="12"
+        placeholder="Escriba la información adicional aquí"></textarea>
+    </div>
+
+
+    <input class="form-control" type="submit" value="enviar"> <br>
+    <input class="form-control" type="reset" value="borrar"><br>
+
+    </form>
+  </main>
+
+  <!-- --------------footer------------------  -->
+
+  <footer data-aos="fade-up" class="container-fluid d-flex flex-column justify-content-center body__footer">
 
 
 
@@ -137,52 +136,53 @@
       <strong>¡Sumate!</strong>
     </p>
 
-    
-   
 
-   
 
-  <form class="form-inline container d-flex flex-column justify-content-around align-items-center mb-4" action="/action_page.php">
-  <!-- nombre  -->
-  <label for="uname" class="mr-sm-2">Nombre:</label>
-  <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Tu nombre" id="uname">
-  <!-- email  -->
-  <label for="email" class="mr-sm-2">Email:</label>
-  <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Tu email" id="email">
- 
-  <button type="submit" class="btn mb-2 form__button">UNIRME</button>
-</form>
 
- 
+
+
+    <form class="form-inline container d-flex flex-column justify-content-around align-items-center mb-4"
+      action="/action_page.php">
+      <!-- nombre  -->
+      <label for="uname" class="mr-sm-2">Nombre:</label>
+      <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Tu nombre" id="uname">
+      <!-- email  -->
+      <label for="email" class="mr-sm-2">Email:</label>
+      <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Tu email" id="email">
+
+      <button type="submit" class="btn mb-2 form__button">UNIRME</button>
+    </form>
+
+
     <!-- ----------------------------------LOGOS RRSS ------------------------------------------------------------>
 
     <section class="container-fluid d-flex justify-content-center footer__section">
 
-        <a href="https://www.instagram.com/ton.soria/" target="_blank">
-          <img class="section__a" src="../img/instagram.png" alt="cuenta instagram ton soria"></a>
-  
-        <a href="https://www.youtube.com/c/TonSoria" target="_blank">
-          <img class="section__a" src="../img/youtube.png" alt="Ton Soria Canal de Youtube"></a>
-  
-        <a href="https://open.spotify.com/artist/7gbk7zeEljXP9GAHxwNHar">
-          <img class="section__a" src="../img/spotify.png" alt=""></a>
-  
-        <a href="https://www.facebook.com/SoriaTon" target="_blank">
-          <img class="section__a" src="../img/facebook.png" alt=""></a>
-  
-      </section>
-    </footer>
-    <!-- -------------------------------fin footer------------------------------------------------  -->
-  
-    <!------------------------------sripts bootstrap------------------------------------------------->
-  
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+      <a href="https://www.instagram.com/ton.soria/" target="_blank">
+        <img class="section__a" src="../img/instagram.png" alt="cuenta instagram ton soria"></a>
+
+      <a href="https://www.youtube.com/c/TonSoria" target="_blank">
+        <img class="section__a" src="../img/youtube.png" alt="Ton Soria Canal de Youtube"></a>
+
+      <a href="https://open.spotify.com/artist/7gbk7zeEljXP9GAHxwNHar">
+        <img class="section__a" src="../img/spotify.png" alt=""></a>
+
+      <a href="https://www.facebook.com/SoriaTon" target="_blank">
+        <img class="section__a" src="../img/facebook.png" alt=""></a>
+
+    </section>
+  </footer>
+  <!-- -------------------------------fin footer------------------------------------------------  -->
+
+  <!------------------------------sripts bootstrap------------------------------------------------->
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   <!-- -------------------------------------AOS---------------------------------------------------- -->
   <script>
     AOS.init();
   </script>
-  </body>
-  
-  </html>
+</body>
+
+</html>
