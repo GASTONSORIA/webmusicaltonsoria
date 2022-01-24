@@ -11149,6 +11149,10 @@ body {
           align-items: center;
 }
 
+.footer__form--width {
+  max-width: 500px;
+}
+
 .form__button {
   background-color: #f5f5dc;
 }
@@ -11357,5 +11361,23 @@ article.card-group.row {
 /* ----------------------------------mediaqueries--------------------------------------  */
 img.article__img.d-flex.justify-content-center.col-12.col-lg-6 {
   max-width: 100%;
+}
+
+@media (min-width: 1400px) {
+  form.form-inline.container.d-flex.flex-column.justify-content-around.align-items-center.mb-4 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 1024px) {
+  form.form-inline.container.d-flex.flex-column.justify-content-around.align-items-center.mb-4 {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  form.form-inline.container.d-flex.flex-column.justify-content-around.align-items-center.mb-4 {
+    max-width: 540px;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
