@@ -11112,6 +11112,22 @@ body {
   background-image: linear-gradient(to top, #6b7d4a, #f5f5dc);
 }
 
+.footer__section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section__a {
+  padding: 0 10px 20px;
+}
+
 .footer__p {
   text-align: center;
   margin: 20px;
@@ -11155,22 +11171,6 @@ body {
 
 .form__button {
   background-color: #f5f5dc;
-}
-
-.footer__section {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.section__a {
-  padding: 0 10px 20px;
 }
 
 .card {
