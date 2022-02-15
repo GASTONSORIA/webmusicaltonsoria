@@ -226,11 +226,12 @@ sup {
 
 a {
   color: #f5f5dc;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
   color: #c4c4b0;
+  text-decoration: none;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -11269,6 +11270,15 @@ h3, .h3 {
   background-color: olivedrab;
 }
 
+.card--size {
+  max-width: 400px;
+}
+
+.card-body--sizeform {
+  min-width: 320px;
+  max-width: 600px;
+}
+
 /*-- epk --*/
 .body__main {
   width: 100vw;
@@ -11319,24 +11329,29 @@ article.card-group.row {
   font-family: 'Raleway', sans-serif;
 }
 
+a.btn.col-6.bg-white {
+  border-radius: 0;
+}
+
 /* --blog-- ------------------------------------------------*/
 .main__article--bgcolor {
   background-color: #f5f5dc;
   padding-top: 1rem;
 }
 
-.btn--estrella {
-  border-color: black;
-  background-color: white;
-}
-
 .div__a--color3 {
-  color: black;
+  color: #f5f5dc;
+  max-width: 400px;
+  text-decoration: none;
 }
 
 .article__p--map-get {
   font-size: 19px;
   color: #333;
+}
+
+.card-body.d-flex.justify-content-center {
+  padding: 0;
 }
 
 /* quiero apoyar el proyecto  */
@@ -11372,6 +11387,12 @@ img.article__img.d-flex.justify-content-center.col-12.col-lg-6 {
 @media (min-width: 1024px) {
   form.form-inline.container.d-flex.flex-column.justify-content-around.align-items-center.mb-4 {
     max-width: 540px;
+  }
+  .img--size {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+    width: 100vw;
+    height: 50vh;
   }
 }
 

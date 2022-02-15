@@ -70,8 +70,8 @@
       <h2 class="text-center">Booking</h2>
     </div>
     <!-- FORMULARIO BOOKING -->
-    <div class="card-body">
-      <form class="form-inline" action="contacto.php" method="post" enctype="application/x-www-form-urlencoded">
+    <div class="card-body card-body--sizeform mx-auto">
+      <form class="form-inline" action="../php/booking.php" method="post" enctype="application/x-www-form-urlencoded">
 
 
         <label for="nombre">Nombre:</label>
@@ -92,7 +92,7 @@
 
 
         <label for="evento">Tipo de evento</label>
-        <select class="form-control" name="evento" id="">
+        <select class="form-control" name="evento" id="evento">
           <option value="concierto">Concierto</option>
           <option value="festival">Festival</option>
           <option value="show a benenficio">Show a beneficio</option>
@@ -100,7 +100,7 @@
         </select><br>
 
         <label for="evento">Nombre del evento:</label>
-        <input class="form-control" type="text" required name="evento" placeholder="Ingresa el nombre del evento"><br>
+        <input class="form-control" type="text" required name="nombredelevento" placeholder="Ingresa el nombre del evento"><br>
 
         <label for="asistencia">Asistencia esperada:</label>
         <input class="form-control" type="number" required name="asistencia" placeholder="2000-3000"><br>
@@ -116,15 +116,15 @@
 
     </div>
 
-    <div class="card-footer">
+    <div class="card-footer card-body--sizeform mx-auto">
       <legend>Información adicional (opcional)</legend>
       <textarea class="form-control" name="informacionadicional" id="" cols="60" rows="12"
         placeholder="Escriba la información adicional aquí"></textarea>
     </div>
 
 
-    <input class="form-control" type="submit" value="enviar"> <br>
-    <input class="form-control" type="reset" value="borrar"><br>
+    <input class="form-control btn-success mt-3 mx-auto w-25" type="submit" value="enviar"> <br>
+    <input class="form-control btn-success mb-3 mx-auto w-25" type="reset" value="borrar"><br>
 
     </form>
   </main>
@@ -145,14 +145,14 @@
 
 
 
-    <form class="form-inline container d-flex flex-column justify-content-around align-items-center mb-4"
-      action="/action_page.php">
+    <form class="form-inline container d-flex flex-column justify-content-around align-items-center mb-4 footer__form--width"
+      action="../php/enviar.php" method="post">
       <!-- nombre  -->
-      <label for="uname" class="mr-sm-2">Nombre:</label>
-      <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Tu nombre" id="uname">
+      <label for="name" class="mr-sm-2">Nombre:</label>
+      <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Tu nombre" id="name" name="nombre" required>
       <!-- email  -->
       <label for="email" class="mr-sm-2">Email:</label>
-      <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Tu email" id="email">
+      <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Tu email" id="email" name="email" required>
 
       <button type="submit" class="btn mb-2 form__button">UNIRME</button>
     </form>

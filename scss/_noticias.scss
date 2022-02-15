@@ -12,14 +12,13 @@
 
 
 // BOTON
-.btn--estrella {
-    border-color: black;
-    background-color: white;
-    
-}
+
 
 .div__a--color3 {
-    color: black;
+    color: $color2;
+    max-width: 400px;
+    text-decoration: none;
+
 }
 
 // map-get()---------------------------------------
@@ -31,4 +30,9 @@ $estilos-p: (
 .article__p--map-get {
     font-size: map-get($estilos-p, tamaño);
     color: map-get($estilos-p, color1);
+}
+
+// CARD BODY
+.card-body.d-flex.justify-content-center {
+    padding: 0;
 }

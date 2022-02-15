@@ -70,103 +70,87 @@
 
 
     <!-- ------------------------------Contenido Principal--------------------------------------------------- -->
-    <main class="mt-lg-4">
-        <h2 class="container-fluid my-3">¡Quiero apoyar a Ton!</h2>
-        <div class="accordion" id="accordionExample">
+    <main>
+        <h2 class="container-fluid my-5">¡Quiero apoyar a Ton!</h2>
+        <div class="accordion w-75 mx-auto" id="accordionExample">
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                 <img src="../img/mercadopago.png" alt="logo de mercado pago, apreton de manos"> <p class="px-4">Solo para 
-                    Argentina</p>
-                </button>
-              </h2>
-              <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        <img src="../img/mercadopago.png" alt="logo de mercado pago, apreton de manos">
+                        <p class="px-4">Solo para
+                            Argentina</p>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body my-4">
+                        <div class="d-flex justify-content-between mb-4">
+                            <strong>AR$ 999</strong>
+                            <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                                data-preference-id="548712216-431c0a28-6aa2-49bb-af7d-61fe381140f8"
+                                data-source="button">
+                            </script>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <strong>AR$ 1999</strong>
+                            <script data-aos="fade-left"
+                                src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
+                                data-preference-id="548712216-840eb027-18d0-4ef0-86d4-030fc05c07b4" data-source="button"
+                                id="mercadopago">
+                            </script>
+                        </div>
+                    </div>
+
                 </div>
-              </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <img src="../img/paypal.png" alt="logo de paypal, letra p dentro de un circulo"> <p class="px-4">Todos los paises</p>
-                </button>
-              </h2>
-              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <img src="../img/paypal.png" alt="logo de paypal, letra p dentro de un circulo">
+                        <p class="px-4">Todos los paises</p>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="d-flex justify-content-between my-4">
+                            <strong>Vos elegis el monto</strong> 
+                            <button data-aos="fade-left" id="button" class="col-5"
+                                type="button" class="btn btn-primary btn-lg">
+                                <a class="button__a" href="https://paypal.me/tonsoria?country.x=AR&locale.x=es_XC">Enviar</a>
+                            </button>
+                        </div>
+                    </div>
                 </div>
-              </div>
+
             </div>
-        </div>    
-            
-         
+        </div>
+
         
-        <!--<div class="container d-flex flex-wrap ">
-            <div class="card container col-lg-4 p-4 d-flex justify-content-center my-4 ">
-                <h3 class="card-title mb-1 col-12 text-white">Mercado Pago</h3>
-                <p class="card-text col-12 text-white">Solo Argentina</p>
-                <div class="col-12 d-flex p-4">
-                    <h4 class="card-text col-7  font-weight-bolder div__h4"> AR$ 999 </h4>
-
-                    <script src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-                        data-preference-id="548712216-431c0a28-6aa2-49bb-af7d-61fe381140f8" data-source="button">
-                    </script>
+            <article class="card mt-5 ">
+                <div class="card-header">
+                    <h2 class="wow bounceInUp ">Beneficios para vos por apoyar al proyecto</h2>
                 </div>
-
-                <div class="col-12 container d-flex ">
-                    <h4 class="card-text col-7 font-weight-bolder div__h4"> AR$ 1999</h4>
-                    <script data-aos="fade-left"
-                        src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-                        data-preference-id="548712216-840eb027-18d0-4ef0-86d4-030fc05c07b4" data-source="button"
-                        id="mercadopago">
-                    </script>
-                </div>
-            </div>
-
-
-            <div class="card container col-lg-4 mb-1">
-                <div class="card-body row ">
-                    <h3 class="card-title col-12 text-white">Paypal</h3>
-                    <p class="card-text col-12 text-white">Todos los paises</p>
-                    <h4 class="col-7  font-weight-bolder div__h4" data-aos="fade-right">Vos elegis el monto</h4>
-                    <button data-aos="fade-left" id="button" class="col-5" type="button"
-                        class="btn btn-primary btn-lg"><a class="button__a"
-                            href="https://paypal.me/tonsoria?country.x=AR&locale.x=es_XC">Enviar</a></button>
-                </div>
-            </div>
-
-        </div> -->
-        <footer class="jumbotron-fluid container">
-            <article class="row mx-4 mt-4">
-
-                <h2 class="article__h2 col-12 mt-4 wow bounceInUp">Beneficios para vos por apoyar al proyecto</h2>
-
-                <p data-aos="zoom-in" class="col 12 text-justify"> Todo proyecto independiente, en realidad, depende en
-                    gran parte de cada uno
-                    de
-                    ustedes. Sobre todo al principio, cuando son pocas personas y gracias a la globalizacion, estan
-                    esparcidas por distintos paises, provincias y barrios. Sin conocernos cara a cara, ya estuvimos
-                    compartiendo música, charlas, y el día a día a traves de las redes. <br> Si llegaste hasta acá
-                    es
-                    porque
-                    tenemos un lazo especial, porque de alguna manera conectamos y tenemos varias cosas en comun. No
-                    todos
-                    llegan a esta instancia de querer ser parte del proyecto y ser parte de esta nueva etapa, mi
-                    primer
-                    disco. Las cosas llevan su tiempo, pero con dinero se vuelven realidad mas rapido y con mas
-                    calidad.
+                <div class="card-body">
+                    <p data-aos="zoom-in" class=""> Todo proyecto independiente, en realidad, depende en
+                    gran parte de cada uno de ustedes.Si llegaste hasta acá es porque tenemos conectamos de una manera especial. No
+                    todos llegan a esta instancia de querer ser parte del proyecto y ser parte de esta nueva etapa, mi
+                    primer disco. Las cosas llevan su tiempo, pero con dinero se vuelven realidad mas rápido y con más calidad.
                     <br>
-                    Como agradecimiento de tu aporte quiero darte un regalo muy especial y que lo elijas vos. <br>
+                    Como agradecimiento de tu aporte quiero darte un regalo muy especial y que lo elijas vos. 
+                    <br>
                     Donando ARS $999 o u$S100 recibis un vale para pedir un cover a eleccion con una duracion de 15
                     segundos
-                    (puede ser para dedicar a una persona o para vos!) <br>
+                    (puede ser para dedicar a una persona o para vos!) 
+                    <br>
                     Donando ARS $1999 o U$S200 recibis un vale para un cover a eleccion con una duracion de 60 seg
-                    (¡Puede
-                    ser para dedicar a una persona o para vos!)
-                </p>
+                    (¡Puede ser para dedicar a una persona o para vos!)
+                    </p>
+                </div>
             </article>
-        </footer>
+        
 
     </main>
 
@@ -179,21 +163,19 @@
             <strong>¡Sumate!</strong>
         </p>
 
-        <form class="form-inline container d-flex flex-column justify-content-around align-items-center mb-4"
-            action="/action_page.php">
-
+        <form
+            class="form-inline container d-flex flex-column justify-content-around align-items-center mb-4 footer__form--width"
+            action="../php/enviar.php" method="post">
             <!-- nombre  -->
-            <label for="uname" class="mr-sm-2">Nombre:</label>
-            <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Tu nombre" id="uname">
-
+            <label for="name" class="mr-sm-2">Nombre:</label>
+            <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Tu nombre" id="name" name="nombre"
+                required>
             <!-- email  -->
             <label for="email" class="mr-sm-2">Email:</label>
-            <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Tu email" id="email">
+            <input type="email" class="form-control mb-2 mr-sm-2" placeholder="Tu email" id="email" name="email"
+                required>
 
             <button type="submit" class="btn mb-2 form__button">UNIRME</button>
-
-
-
         </form>
         <!-- ----------------------------------LOGOS RRSS ------------------------------------------------------------>
 

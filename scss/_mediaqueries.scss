@@ -18,6 +18,14 @@ img.article__img.d-flex.justify-content-center.col-12.col-lg-6 {
     form.form-inline.container.d-flex.flex-column.justify-content-around.align-items-center.mb-4 {
         max-width: 540px;
     }
+    //IMG
+
+    .img--size {
+    object-fit: scale-down;
+    width: 100vw;
+    height: 50vh;
+    
+}
 
 }
 
