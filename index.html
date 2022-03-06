@@ -77,39 +77,62 @@
     <div class="card card--size mx-auto mt-xs-3 mt-md-5">
       <img class="card-img-top" src="./img/lo-lindo-ton-soria-saraguato.png" alt="Card image">
       <div class="card-body">
-        <a href="https://open.spotify.com/album/3dO75ohfAphPmPrZvOOZ5Q?si=UFAdYtyNSfiou4i_Zkczcg" class="btn btn--spotify" target="_blank"><img src="./img/spotify.png" alt="boton spotify" class="m-2">SPOTIFY</a>
-        <a href="https://www.youtube.com/watch?v=uYFnVdb9Abk&ab_channel=Saraguato-Topic" class="btn btn--youtube mt-3"><img src="./img/youtube.png" alt="boton youtube" class="m-2">YOUTUBE</a>
+        <a href="https://open.spotify.com/album/3dO75ohfAphPmPrZvOOZ5Q?si=UFAdYtyNSfiou4i_Zkczcg"
+          class="btn btn--spotify" target="_blank"><img src="./img/spotify.png" alt="boton spotify"
+            class="m-2">SPOTIFY</a>
+        <a href="https://www.youtube.com/watch?v=uYFnVdb9Abk&ab_channel=Saraguato-Topic"
+          class="btn btn--youtube mt-3"><img src="./img/youtube.png" alt="boton youtube" class="m-2">YOUTUBE</a>
       </div>
     </div>
 
     <div class="card card--size d-flex justify-content-center mx-auto mt-md-5">
       <img class="card-img-top" src="./img/quien-iba-a-decir.jpg" alt="Card image">
       <div class="card-body">
-        <a href="https://open.spotify.com/embed/track/5wTXX03DJACyZICvPjL4ve?utm_source=generator&theme=0" class="btn btn--spotify" target="_blank"><img src="./img/spotify.png" alt="boton spotify" class="m-2">SPOTIFY</a>
-        <a href="https://www.youtube.com/embed/pFuFUvswN-A" class="btn btn--youtube mt-3" target="_blank"><img src="./img/youtube.png" alt="boton youtube" class="m-2">YOUTUBE</a>
+        <a href="https://open.spotify.com/embed/track/5wTXX03DJACyZICvPjL4ve?utm_source=generator&theme=0"
+          class="btn btn--spotify" target="_blank"><img src="./img/spotify.png" alt="boton spotify"
+            class="m-2">SPOTIFY</a>
+        <a href="https://www.youtube.com/embed/pFuFUvswN-A" class="btn btn--youtube mt-3" target="_blank"><img
+            src="./img/youtube.png" alt="boton youtube" class="m-2">YOUTUBE</a>
       </div>
     </div>
-  
-  </main>
 
+  </main>
+  <!-- --------------CARD QUIERO APOYAR EL PROYECTO------------------  -->
   <article class="card">
-    
+
     <div class="card-body  mx-md-auto">
       <h2 class="card-title">Quiero apoyar a Ton Soria </h2>
-      <div class="card-body "><p class="card-text">¿Querés aportar tu granito de arena para hacer realidad el próximo proyecto y no sabés cómo? Presioná el botón "Quiero apoyar a TON"</p>
+      <div class="card-body ">
+        <p class="card-text">¿Querés aportar tu granito de arena para hacer realidad el próximo proyecto y no sabés
+          cómo? Presioná el botón "Quiero apoyar a TON"</p>
         <a href="./secciones/quiero-apoyar-al-proyecto.html" class="btn btn-success">QUIERO APOYAR A TON</a>
-      </div> 
-      
-    </div> 
-
-      
-      
- 
-
+      </div>
+    </div>
   </article>
+  <!-- --------------NOTAS DE VOZ (PROYECTO JAVASCRIPT)------------------  -->
 
+  <section class="card">
+    <div class="card-body mx-auto justify-content-center ">
+    <img src="./img/notasdevoz.png" alt="icono de microfono, grabaciones con el celular">
+    <h2>Notas de voz</h2>
+    <h3>Tantas veces - Ton Soria (En vivo 2019)</h3>
+    <input type="range" value="20" min="0" />
+    <audio class="player__audio" controls id="audio">
+      <source src="./audio/ton-soria-tantas-veces-notas-de-voz.mp3" type="audio/mpeg" />
+    </audio>
 
-  </article>
+    <!-- BOTONES -->
+    <div>
+      <!-- ANTERIOR -->
+      <img src="./img/atras.png" alt="anterior canción">
+      <!-- PLAY -->
+      <img src="./img/play.png" alt="reproducir canción">
+      <!-- SIGUIENTE -->
+      <img src="./img/adelante.png" alt="siguiente canción">
+    </div>
+  </div>
+  </section>
+
 
   <!-- --------------footer------------------  -->
 
@@ -121,7 +144,8 @@
     </p>
 
 
-    <form class="form-inline container d-flex flex-column justify-content-around align-items-center mb-4 footer__form--width"
+    <form
+      class="form-inline container d-flex flex-column justify-content-around align-items-center mb-4 footer__form--width"
       action="/php/enviar.php" method="post">
       <!-- nombre  -->
       <label for="name" class="mr-sm-2">Nombre:</label>
@@ -157,10 +181,14 @@
   <!-- -------------------------------SCRIPTS JS------------------------------------------------  -->
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+  <!-- *************SCRIPT PROYECTO FINAL*******************  -->
+  <script src="./js/main.js"></script>
+
   <!-- -------------------------------------AOS---------------------------------------------------- -->
   <script>
     AOS.init();
   </script>
+
 </body>
 
 </html>
